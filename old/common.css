@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+body{
+ background-image: url("/image/background.jpg"); 
+ /* 画像を常に左右の中央に配置 */
+  background-position: center top;
+   
+  /* 画像をタイル状に繰り返し表示しない */
+  background-repeat: no-repeat;
+   
+  /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+  background-attachment: fixed;
+   
+  /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+  background-size: cover;
+
+  font-family: 'Georgia', serif;
+}
+
+a{/*リンクされた文字*/
+    color:#ff0098;
+    font-family: 'Verdana', 'メイリオ', sans-serif;
+    font-style:normal;
+    text-decoration:none;
+}
+a:hover {/*マウスをのせたとき*/
+    color:#FECFE6;
+    font-family: 'Verdana', 'メイリオ', sans-serif;
+    font-style:normal;
+    text-decoration:none;
+}
+
+h1#header{
+    font-family: sans-serif;
+	font-size: 36px;
+	font-weight: bold;
+	color: #ff0098;
+  height: 80px;
+  background-color: rgba(255,255,255,0.55);
+}
+
+.header_logo{
+	float: left;
+	padding: 0px 10px;
+}
+
+.main_area{
+  height: 500px;
+}
+
+.right_area{
+  width : 85%;
+  float: right;
+  padding-right: 10px;
+}
+
+ul.navi{
+  padding: 0px;
+  width : 15%;
+}
+
+ul.navi li{
+	list-style: none;
+	color: #ff0098;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.maintxt{
+    font-family: 'Georgia', serif;
+    text-align: center;
+    color: gray;
+    font-size: 14px;
+
+}
+
+#footer{
+  height: 40px;
+  background-color: rgba(255,255,255,0.55);
+}
+
+#footer p{
+  text-align: center;
+  font-size: 12px;
+  padding-top: 14px;
+}

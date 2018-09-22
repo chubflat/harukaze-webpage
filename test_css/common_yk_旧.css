@@ -1,0 +1,305 @@
+@charset "utf-8";
+
+html {
+  height: 100%;
+}
+
+body{
+  background-image: url("../image/background.jpg"); 
+ /* 画像を常に左右の中央に配置 */
+  background-position: center top;
+   
+  /* 画像をタイル状に繰り返し表示しない */
+  background-repeat: no-repeat;
+   
+  /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+  background-attachment: fixed;
+   
+  /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+  background-size: cover;
+
+  font-family: 'ヒラギノ明朝 ProN W3', 'Hiragino Mincho ProN', 'HG 明朝 E', serif;
+
+  height: 100%;
+
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a{/*リンクされた文字*/
+    color:#ff0098;
+    font-family: 'Verdana', 'メイリオ', sans-serif;
+    font-style:normal;
+    text-decoration:none;
+}
+a:hover {/*マウスをのせたとき*/
+    color:#FECFE6;
+    font-family: 'Verdana', 'メイリオ', sans-serif;
+    font-style:normal;
+    text-decoration:none;
+}
+
+p {
+  color: #666666;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: normal;
+  font-family: 'メイリオ', sans-serif;
+  color: #ff0098;
+  margin-top: 0px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: normal;
+  color: #666666;
+}
+
+.wrap {
+  height: 100%;
+}
+
+#header {
+  height: 130px;
+  margin-bottom: 30px;
+}
+
+.header_logo{
+  padding-left: 10px;
+  height: 130px;
+}
+
+.main {
+  padding-bottom: 50px;
+}
+
+.navi {
+  float: left;
+  width: 15%;
+  display: inline-block;
+  text-align: center;
+}
+
+.navi ul {
+	padding-left: 0;
+}
+
+.navi li{
+  padding: 0;
+  list-style: none;
+  color: #ff0098;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+.twitter {
+  background-color: #55acee;
+  height: 24px;
+  width: 160px;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 5px;
+  padding-left: 20px;
+  border-radius: 4px;
+  font-size: 12px;
+  position: relative;
+  text-align: center;
+}
+
+.twitter a {
+  display: block;
+  color: white;
+  height: 24px;
+  line-height: 24px;
+}
+
+.icon {
+  width: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.contents {
+  width: 85%;
+  float: right;
+  display: inline-block
+}
+
+.clear {
+  clear: both;
+}
+
+#footer p{
+  height: 40px;
+  width: 100%;
+  background-color: rgba(255,255,255,0.55);
+  text-align: center;
+  font-size: 12px;
+  line-height: 40px;
+}
+
+/* ここまで各ページ共通 */
+/* ここからコンテンツ中身 */
+/* TOPページ */
+
+.top {
+  text-align: center;
+  height: 600px;
+}
+
+.main-pic {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.maintext {
+    text-align: center;
+}
+
+.text {
+  font-family: serif;
+  font-size: 14px;
+}
+
+/* about */
+
+.about {
+  text-align: center;
+  background-color: rgba(255,255,255,0.5);
+  width: 95%;
+  margin: 0 auto;
+}
+
+.about-heading {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.about-logo {
+  width: 15%;
+  margin: 0 auto;
+}
+
+.about-text {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.about-text p{
+  line-height: 150%;
+  font-size: 14px;
+}
+
+/* concert */
+
+.concert {
+  background-color: rgba(255,255,255,0.5);
+  width: 95%;
+  margin: 0 auto;
+}
+
+.concert-heading {
+  text-align: center;
+  padding-top: 60px;
+}
+
+.concert-heading h1 {
+  padding-bottom: 20px;
+}
+
+.concert-heading h2 {
+  padding-bottom: 40px;
+}
+
+.concert-info {
+  width: 55%;
+  margin: 0 auto;
+}
+
+.concert-info br{
+  display: none;
+}
+
+.info {
+  padding-bottom: 25px;
+}
+
+.access {
+  padding-left: 20px;
+} 
+
+.music li{
+  color: #666666;
+  list-style: none ;
+  padding: 0;
+  line-height: 200%;
+}
+
+.music span {
+  font-weight: bold;
+  padding-right: 10px
+}
+
+.other {
+  margin-left: 30px;
+}
+
+.elements {
+  margin-left: 15px;
+}
+
+.concert-paper {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.paper {
+  width: 30%;
+}
+
+/* contact */
+
+.contact {
+  background-color: rgba(255,255,255,0.5);
+  width: 95%;
+  margin: 0 auto;
+  height: 500px;
+  padding-top: 60px;
+  padding-left: 60px;
+}
+
+
+/* 以下レスポンシブ用 */
+
+@media(max-width: 670px) {
+  #header {margin-bottom: 10px; height: 100px;}
+  h1 {font-size: 18px;}
+  .header_logo {height: 100px;}
+  .navi { width: 100%; display: block;}
+  .navi ul {padding-left: 40px;}
+  .navi li {float: left; padding-right: 10px; padding-top: 0; padding-bottom: 0;}
+  .twitter {margin: 0px 0px 0px 40px;}
+  .contents { width: 100%; display: block; margin-top: 20px;}
+  .maintext { width: 80%; margin: 0 auto;　text-align: left;}
+  .text { font-size: 10.5px; text-align: left;}
+  .concert-heading h2{ font-size: 14px;}
+  .concert-info {width: 70%;}
+  .concert-info br{ display: block;}
+  .concert p, li {font-size: 14px;}
+  .access a {font-size: 14px;}
+  .about-heading, .concert-heading {padding-top: 30px;}
+  .about-logo {width: 40%;}
+  .contact {text-align: left}
+}
+
+@media(min-width: 1200px) {
+	.top {height: 1200px;}
+}
